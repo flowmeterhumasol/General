@@ -15,6 +15,9 @@ Dit debietmeter-project is deel van een ontwikkelingsproject van de organisatie 
 
 Als uitbreiding op dit project ontwerpen we een debietmeter. Deze zal ervoor zorgen dat de VDC (lokaal bestuur) het verbruik van de bevolking kan opvolgen, en gebruiken voor een betalingssysteem uit te werken. Ook zal 'The water departement' en universiteit van Gambia toegang hebben tot de data voor onderzoek. 
 
+
+[Gantt chart](https://share.clickup.com/g/h/4dy0f-15/a6a5620b579de9b "Gantt chart")
+
 ## Concept 
 
 ![flow chart](Flowchart.png)
@@ -23,6 +26,22 @@ Aan elke kraan die voor privé verbruik gebruikt wordt, wordt een flowsensor bev
 
 We hebben het project opgedeeld in verschillende repositories en zullen de definitieve samengevoegde code onder 'General' plaatsen. 
 
+
+### Sensor
+
+Momenteel zijn we een proefopstelling aan het maken met de goedkope sensor [YF-S401 Water Flow Sensor](https://www.tinytronics.nl/shop/nl/sensoren/vloeistof/yf-s401-water-flow-sensor "YF-S401 Water Flow Sensor").  
+
 ### Lora Connectie 
+
+### GPRS modem 
+
+### Website 
+
+#### Concept Website 
+
+Het is de bedoeling dat de bevolking, het lokaal bestuur en het water departement van Gambia het verbruik van Kunting kunnen raadplegen. We kozen ervoor om per dag het totaal
+verbruikte aantal liter per privé kraan beschikbaar te stellen. Het is minder interessant om de exacte tijdstippen weer te geven, aangezien de website zo simpel mogelijk moet blijven. Hierdoor zal het bestuur aan de hand van onze data kunnen berekenen wat de maandelijkse kost van water zal zijn. 
+
+#### Uitwerking Website 
 
 
