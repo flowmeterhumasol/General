@@ -3,11 +3,18 @@
 Dit is de algemene bescrhijving van de werking van de debietmeter. 
 
 ## Inhoud
-<details>
-  <summary>Klik om uit te vouwen</summary>
-- [Bachelorproject Debietmeter](#Bachelorproject Debietmeter)
 
-</details>
+- [Bachelorproject Debietmeter](#bachelorproject-debietmeter)
+  * [Inhoud](#inhoud)
+  * [Inleiding](#inleiding)
+  * [Concept](#concept)
+    + [Sensor](#sensor)
+    + [Lora Connectie](#lora-connectie)
+    + [GPRS modem](#gprs-modem)
+    + [Voeding](#voeding)
+    + [Website](#website)
+      - [Concept Website](#concept-website)
+      - [Uitwerking Website](#uitwerking-website)
 
 ## Inleiding
 
