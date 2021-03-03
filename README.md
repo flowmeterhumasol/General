@@ -41,7 +41,7 @@ In Kunting zullen we gebruik maken van de 800 Series Low Power Flowmeter. Dit is
 
 ### Lora Connectie 
 
-
+Lora is een long range wide area netwerk. Via dit netwerk kunnen we aan langeafstandscommunicatie doen met weinig vermogen. Via radio frequentie 868 MHz( die voor IOT is vrijgehouden) zullen we onze data sturen van de nodes ( flowmeters) naar de gateway (de arduino bij de raspberry pi). 
 
 ### GPRS modem 
 
@@ -56,6 +56,8 @@ De centrale arduino met Raspberry Pi bevinden zich in een centraal oplaad hutje 
 ### Website 
 
 #### Concept Website 
+
+![flow chart website](flowchartWebsite.png)
 
 Het is de bedoeling dat de bevolking, het lokaal bestuur en het water departement van Gambia het verbruik van Kunting kunnen raadplegen. We kozen ervoor om per dag het totaal
 verbruikte aantal liter per privé kraan beschikbaar te stellen. Het is minder interessant om de exacte tijdstippen weer te geven, aangezien de website zo simpel mogelijk moet blijven. Hierdoor zal het bestuur aan de hand van onze data kunnen berekenen wat de maandelijkse kost van water zal zijn. 
