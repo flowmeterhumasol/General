@@ -37,11 +37,15 @@ We hebben het project opgedeeld in verschillende repositories en zullen de defin
 
 Momenteel zijn we een proefopstelling aan het maken met de goedkope sensor [YF-S401 Water Flow Sensor](https://www.tinytronics.nl/shop/nl/sensoren/vloeistof/yf-s401-water-flow-sensor "YF-S401 Water Flow Sensor").  
 
-In Kunting zullen we gebruik maken van de 800 Series Low Power Flowmeter. Dit is een low power flowmeter die foodsafe is met een diameter van 8mm. De verdeler van deze flowmeter moeten we nog contacteren. 
+In Kunting zullen we gebruik maken van de 800 Series Low Power Flowmeter. Dit is een low power flowmeter die foodsafe is met een diameter van 8mm en op 3V3 werkt. De verdeler van deze flowmeter moeten we nog contacteren. 
 
 ### Lora Connectie 
 
+
+
 ### GPRS modem 
+
+
 
 ### Voeding
 
