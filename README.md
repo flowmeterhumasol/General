@@ -39,19 +39,20 @@ Momenteel zijn we een proefopstelling aan het maken met de goedkope sensor [YF-S
 
 In Kunting zullen we gebruik maken van de 800 Series Low Power Flowmeter. Dit is een low power flowmeter die foodsafe is met een diameter van 8mm en op 3V3 werkt. De verdeler van deze flowmeter moeten we nog contacteren. 
 
-### Lora Connectie 
-
-Lora is een long range wide area netwerk. Via dit netwerk kunnen we aan langeafstandscommunicatie doen met weinig vermogen. Via radio frequentie 868 MHz( die voor IOT is vrijgehouden) zullen we onze data sturen van de nodes ( flowmeters) naar de gateway (de arduino bij de raspberry pi). 
-
-### GPRS modem 
-
-
 
 ### Voeding
 
 De arduino uno heeft een spanning van 5-12V nodig. De 800 Series Low Power Flowmeter heeft maar 3.3V nodig. We zullen de arduino voeden door knoopcel batterijen (CR2032), en de sensor bevestingen aan de 3V3 pin. 
 
 De centrale arduino met Raspberry Pi bevinden zich in een centraal oplaad hutje waar elektriciteit is op zonne energie.
+
+### Lora Connectie 
+
+Lora is een long range wide area netwerk. Via dit netwerk kunnen we aan langeafstandscommunicatie doen met weinig vermogen. Via radio frequentie 868 MHz( die voor IOT is vrijgehouden) zullen we onze data sturen van de nodes ( flowmeters) naar de gateway (de arduino bij de raspberry pi). Op de Dramco uno bordjes zit een lora module geïntegreerd. 
+
+### GPRS modem 
+
+### Backup dingne ute hoe noemt da nu weer?
 
 ### Website 
 
