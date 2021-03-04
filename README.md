@@ -52,7 +52,7 @@ Lora is een long range wide area netwerk. Via dit netwerk kunnen we aan langeafs
 
 ### GPRS modem 
 
-### Backup dingne ute hoe noemt da nu weer?
+Via een GPRS modem zullen we ervoor zorgen dat de Raspberry Pi toegang krijgt tot het mobiele netwerk.
 
 ### Website 
 
@@ -60,8 +60,11 @@ Lora is een long range wide area netwerk. Via dit netwerk kunnen we aan langeafs
 
 ![flow chart website](flowchartWebsite.png)
 
-Het is de bedoeling dat de bevolking, het lokaal bestuur en het water departement van Gambia het verbruik van Kunting kunnen raadplegen. We kozen ervoor om per dag het totaal
-verbruikte aantal liter per privé kraan beschikbaar te stellen. Het is minder interessant om de exacte tijdstippen weer te geven, aangezien de website zo simpel mogelijk moet blijven. Hierdoor zal het bestuur aan de hand van onze data kunnen berekenen wat de maandelijkse kost van water zal zijn. 
+Het is de bedoeling dat de bevolking, het lokaal bestuur en het water departement van Gambia het verbruik van Kunting kunnen raadplegen. We kozen ervoor om per dag het totaal verbruikte aantal liter per privé kraan beschikbaar te stellen. Het is minder interessant om de exacte tijdstippen weer te geven, aangezien de website zo simpel mogelijk moet blijven. Hierdoor zal het bestuur aan de hand van onze data kunnen berekenen wat de maandelijkse kost van water zal zijn. Qua front-end is het de bedoeling dat er een kaart wordt weergegeven op de startpagina en dat je op de locatie van bepaalde kraantjes zal kunnen klikken om specifiek het verbruik op die plek te bekijken en grafieken van op te vragen. Voor grafieken ben ik momenteel op zoekn naar een graphic plugin voor Wordpress. De plugin die mij momenteel het meeste aanspreekt is WPDatabases. De plugin die zou zorgen voor de kaart is dan Google Maps Placemarks. (Allemaal nog niet zeker).
+
+Aangezien ik met kaarten wil werken, lijkt het me dan ook een goed idee om te werken met een relationele database. Op die manier heb ik de vrijheid om een tabel bij te houden met het kraannummer, datum en aantal verbruikte liters én daarnaast nog een tabel met het kraannummer en de gps coordinaten die hiermee overeenkomen. Van die tweede tabel zal de kaart plugin dan gebruik maken en die eerste tabel wordt voornamelijk gebruikt door WPDatabases. Het is de bedoeling dat deze relationele database volledig dubbel wordt bijgehouden zodat we op elk moment een volledige backup hebben. De database backup zal dus aanwezig zijn op de sd-kaart van de Raspberry Pi zelf. Dit worden mySQL databases die gesynchroniseerd zullen zijn. De database waarvan Wordpress zal gebruik maken via de plugins is de database die we zullen huren bij een externe hosting provider.
+
+Het is ook de bedoeling dat we via DynDNS ervoor zorgen dat we ook vanuit België altijd toegang hebben tot de Raspberry Pi.
 
 #### Uitwerking Website 
 
