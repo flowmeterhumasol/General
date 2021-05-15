@@ -60,13 +60,16 @@ The GPRS modem will allow the RPI to connect to 3G or 4G.
 
 ![flow chart website](flowchartWebsite.png)
 
-Het is de bedoeling dat de bevolking, het lokaal bestuur en het water departement van Gambia het verbruik van Kunting kunnen raadplegen. We kozen ervoor om per dag het totaal verbruikte aantal liter per privé kraan beschikbaar te stellen. Het is minder interessant om de exacte tijdstippen weer te geven, aangezien de website zo simpel mogelijk moet blijven. Hierdoor zal het bestuur aan de hand van onze data kunnen berekenen wat de maandelijkse kost van water zal zijn. 
 
-#### Uitwerking Website 
+Our goal is that the current population of Kunting, the local board and the Water Department of Gambia can consult the water usage in Kunting. We chose to display that the total numbers of liters consumed per private tap each day. The exact times on which the water is consumed is less interesting to us, considering the fact that we wish to keep the website as simple as possible. Based on our daily data, the board will be able to calculate the amount of money that each compound needs to invest.
 
-Qua front-end is het de bedoeling dat er een kaart wordt weergegeven op de startpagina en dat je op de locatie van bepaalde kraantjes zal kunnen klikken om specifiek het verbruik op die plek te bekijken en grafieken van op te vragen. Voor grafieken ben ik momenteel op zoek naar een graphic plugin voor Wordpress. De plugin die mij momenteel het meeste aanspreekt is WPDatabases. De plugin die zou zorgen voor de kaart is dan Google Maps Placemarks. (Allemaal nog niet zeker).
+#### Actual Website 
 
-Aangezien ik met kaarten wil werken, lijkt het me dan ook een goed idee om te werken met een relationele database. Op die manier heb ik de vrijheid om een tabel bij te houden met het kraannummer, datum en aantal verbruikte liters én daarnaast nog een tabel met het kraannummer en de gps coordinaten die hiermee overeenkomen. Van die tweede tabel zal de kaart plugin dan gebruik maken en die eerste tabel wordt voornamelijk gebruikt door WPDatabases. Het is de bedoeling dat deze relationele database volledig dubbel wordt bijgehouden zodat we op elk moment een volledige backup hebben. De database backup zal dus aanwezig zijn op de sd-kaart van de Raspberry Pi zelf. Dit worden mySQL databases die gesynchroniseerd zullen zijn. De database waarvan Wordpress zal gebruik maken via de plugins is de database die we zullen huren bij een externe hosting provider.
+When talking about the Front-end of the website, we can say that there is a satellite image map on which you can see the location of each tap. If a local resident can point at their tap, they will thus see what number of tap corresponds to theirs. Then they can use the filtering system of the website in order to determine what the water usage was during which period.
 
-Het is ook de bedoeling dat we via DynDNS ervoor zorgen dat we ook vanuit België altijd toegang hebben tot de Raspberry Pi.
+I have chosen a relational database type (MySQL) because this is the most frequently used database type and it allows multiple tables to be linked. In this example I would like to make a table with liters/tapnumber/date and apart from that there would be another table with tapnumber/description. In this second table we have the opportunity to explain whose tap this is. 
+
+We have decided to make sure the DynDNS works before our departure, but not before the ending of this semester. We will thus make sure that DynDNS is used in the actual project because this will be necessary if we want to make sure that there is still access to the Raspberry Pi from Belgium even though the Raspberry Pi is situated in Gambia. For our prototype this is not necessary thus we have not yet developped this method.
+
+The Wordpress plugins that have been used to build the website are: wpDataTables, WP Mapbox and WP-forecast. The first plugin was used for responsive data charts, the second one for the satellite imagery and the markers upon that map. The final plugin made sure it was possible to add a weather forecast to the website. This allowed the people to check whether there would be a lot of sun. Because in such a case there will be a lot of water available for consumption.
 
