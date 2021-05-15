@@ -20,7 +20,7 @@ For this project a flow meter system will be designed.  The system will process 
 
 ## Concept 
 
-![flow chart](Flowchart.png)
+![flow chart](Flowchart(2).png)
 
 A flow sensor is attached to every tap that is used for private consumption. This flow sensor is attached to a dramco uno arduino with a Lora modem attached to it. Via Lora peer to peer connection, this microcontroller will send the water consumption to the central arduino. This central arduino is a dramco uno arduino that will be able to receive and forward the data to the raspberry pi. The raspberry pi will in turn process the data and update the website via a gprs module, this will be done via QCell network. On the website it will be possible to consult the consumption of each family.
 
